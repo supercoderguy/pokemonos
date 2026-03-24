@@ -1,2 +1,2 @@
-# pokemonos
-A Pokemon themed, Arch based Linux distro
+# PokemonOS Website
+The PokemonOS website :)
