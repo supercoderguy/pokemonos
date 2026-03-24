@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Downloads - PokemonOS</title>
+  <meta name="description" content="Download the latest PokemonOS ISO. An Arch-based Linux distro focused on speed, simplicity, and fun.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="./index.html" class="brand">
+        <span class="brand-badge" aria-hidden="true">P</span>
+        <span>PokemonOS</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <nav class="menu">
+        <a href="./index.html#features">Features</a>
+        <a href="./index.html#screenshots">Screenshots</a>
+        <a href="./downloads.html">Download</a>
+        <a href="./index.html#docs">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="eyebrow">Get PokemonOS</p>
+      <h1>Downloads</h1>
+      <p class="hero-copy">
+        Grab the latest PokemonOS ISO and flash it to a USB drive to get started.
+      </p>
+    </section>
+
+    <section class="section container">
+      <div class="download-card card">
+        <div class="download-header">
+          <h2>PokemonOS Alpha</h2>
+          <span class="release-tag">Pre-release</span>
+        </div>
+        <p class="release-date">March 24, 2026 &bull; x86_64</p>
+        <ul class="release-details">
+          <li>Arch-based rolling release</li>
+          <li>Lightweight desktop environment with sensible defaults</li>
+          <li>Optimized for performance out of the box</li>
+        </ul>
+        <div class="download-actions">
+          <a class="btn btn-primary btn-lg" href="https://github.com/supercoderguy/pokemonos/releases/download/prerelease/pokemonos-2026.03.24-x86_64.iso">
+            Download ISO
+          </a>
+          <a class="btn btn-secondary" href="https://github.com/supercoderguy/pokemonos/releases">
+            View all releases on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>After downloading</h2>
+      <div class="grid three">
+        <article class="card step-card">
+          <span class="step-number">1</span>
+          <h3>Verify the image</h3>
+          <p>Check the file hash against the one listed on the GitHub release page to ensure integrity.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">2</span>
+          <h3>Flash to USB</h3>
+          <p>Use a tool like <code>dd</code>, Ventoy, or balenaEtcher to write the ISO to a USB drive.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">3</span>
+          <h3>Boot &amp; install</h3>
+          <p>Restart your machine, boot from the USB, and follow the on-screen installer.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>PokemonOS - Made with ❤️ in Australia</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
