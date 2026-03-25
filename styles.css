@@ -37,6 +37,34 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus-visible {
+  outline: 2px solid var(--brand-2);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--brand);
+  color: #04101d;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 100;
+  border-radius: 0 0 10px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: none;
+}
+
 .container {
   width: min(1080px, 92vw);
   margin: 0 auto;
@@ -86,6 +114,21 @@ a:hover {
 .menu a {
   color: var(--muted);
   font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.menu a:hover {
+  color: var(--text);
+}
+.menu a:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.menu a[aria-current="page"] {
+  color: var(--text);
+  background: var(--bg-soft);
 }
 
 .menu-toggle {
@@ -153,6 +196,16 @@ h3 {
   transform: translateY(-1px);
 }
 
+.btn:focus-visible {
+  outline: 2px solid var(--brand-2);
+  outline-offset: 2px;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--brand-2);
+  outline-offset: 2px;
+}
+
 .btn-primary {
   background: linear-gradient(140deg, var(--brand), var(--brand-2));
   color: #04101d;
@@ -192,6 +245,13 @@ h3 {
   border-radius: 14px;
   background: color-mix(in srgb, var(--card) 84%, #02030a);
   padding: 1.1rem;
+  transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--brand);
+  background: color-mix(in srgb, var(--card) 90%, #02030a);
+  transform: translateY(-2px);
 }
 
 .shot {
@@ -289,6 +349,21 @@ code {
   color: var(--muted);
 }
 
+.site-footer p {
+  margin: 0 0 0.75rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--brand-2);
+  font-size: 0.9rem;
+}
+
 @media (max-width: 860px) {
   .grid.two,
   .grid.three {
@@ -314,5 +389,9 @@ code {
 
   .menu[data-open="true"] {
     display: flex;
+  }
+
+  .menu a {
+    padding: 0.5rem 0.75rem;
   }
 }

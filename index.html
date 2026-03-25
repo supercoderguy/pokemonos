@@ -4,22 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PokemonOS - Arch-based Linux distro</title>
-  <meta name="description" content="PokemonOS is an Arch Linux based distribution focused on speed, simplicity, and fun design.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta name="description" content="PokemonOS is an Arch Linux based distribution focused on speed, simplicity, and fun design.">  <meta name=\"theme-color\" content=\"#080b16\">
+  <meta property=\"og:title\" content=\"PokemonOS - Arch-based Linux distro\">
+  <meta property=\"og:description\" content=\"PokemonOS is an Arch Linux based distribution focused on speed, simplicity, and fun design.\">
+  <meta property=\"og:type\" content=\"website\">
+  <meta name=\"twitter:card\" content=\"summary_large_image\">  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
-  <header class="site-header">
+<body>  <a href=\"#main-content\" class=\"skip-link\">Skip to main content</a>  <header class="site-header">
     <div class="container nav">
-      <a href="#" class="brand">
+      <a href="./index.html" class="brand">
         <span class="brand-badge" aria-hidden="true">P</span>
         <span>PokemonOS</span>
       </a>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
       <nav class="menu">
-        <a href="#features">Features</a>
+        <a href=\"#features\" aria-current=\"page\">Features</a>
         <a href="#screenshots">Screenshots</a>
         <a href="./downloads.html">Download</a>
         <a href="#docs">Docs</a>
@@ -27,7 +29,7 @@
     </div>
   </header>
 
-  <main>
+  <main id=\"main-content\">
     <section class="hero container">
       <p class="eyebrow">Arch-based Linux distro</p>
       <h1>PokemonOS</h1>
@@ -86,12 +88,12 @@
         <article class="card">
           <h3>Install Guide</h3>
           <p>Walkthrough from USB boot to first login.</p>
-          <a href="#">Read guide</a>
+                <a href="#docs-install">Read guide</a>
         </article>
         <article class="card">
           <h3>Post-install Setup</h3>
           <p>Packages, desktop tweaks, and gaming setup recommendations.</p>
-          <a href="#">Read guide</a>
+          <a href="#docs-setup">Read guide</a>
         </article>
       </div>
     </section>
@@ -99,8 +101,11 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>PokemonOS - Made with ❤️ in Australia</p>
-    </div>
+      <p>PokemonOS - Made with ❤️ in Australia</p>      <nav class=\"footer-links\">
+        <a href=\"https://github.com/supercoderguy/pokemonos\">GitHub</a>
+        <a href=\"https://github.com/supercoderguy/pokemonos/issues\">Report Issues</a>
+        <a href=\"./downloads.html\">Download</a>
+      </nav>    </div>
   </footer>
 
   <script src="./script.js"></script>
