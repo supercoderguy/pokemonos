@@ -4,20 +4,53 @@ Starter website for **PokemonOS**, an Arch Linux based distro.
 
 ## Project structure
 
-- `website/index.html` - landing page structure
-- `website/styles.css` - styles and responsive layout
-- `website/script.js` - mobile menu behavior
+- `index.html` - landing page with dynamic documentation
+- `downloads.html` - download page
+- `styles.css` - styles and responsive layout
+- `script.js` - mobile menu and documentation loading
+- `docs/documentation.md` - comprehensive documentation in Markdown
+
+## Documentation System
+
+The website now includes a dynamic documentation system that reads from Markdown files:
+
+- **Location**: `docs/documentation.md`
+- **Features**:
+  - Tabbed interface (Install Guide / Post-install Setup)
+  - Real-time Markdown parsing and rendering
+  - Syntax highlighting for code blocks
+  - Responsive design
+  - Error handling for missing files
+
+### Adding Documentation
+
+1. Edit `docs/documentation.md` with your content
+2. Use standard Markdown syntax
+3. The system automatically splits content by `##` headers
+4. Sections are mapped to navigation tabs
+
+### Documentation Structure
+
+The Markdown file should contain sections starting with `##` that correspond to the navigation tabs:
+
+- `## Installation Guide` - Maps to "Install Guide" tab
+- `## Post-Install Setup` - Maps to "Post-install Setup" tab
 
 ## Run locally
 
 From repo root:
 
 ```bash
-cd website
-python -m http.server 8080
+python3 -m http.server 8080
 ```
 
 Then open `http://localhost:8080`.
+
+## Dependencies
+
+- **Marked.js**: Lightweight Markdown parser loaded from CDN
+- **Inter Font**: Google Fonts for typography
+- No build process required - pure HTML/CSS/JS
 
 ## Next steps
 

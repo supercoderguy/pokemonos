@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>  <a href=\"#main-content\" class=\"skip-link\">Skip to main content</a>  <header class="site-header">
     <div class="container nav">
@@ -84,17 +85,14 @@
 
     <section id="docs" class="section container">
       <h2>Docs</h2>
-      <div class="grid two">
-        <article class="card">
-          <h3>Install Guide</h3>
-          <p>Walkthrough from USB boot to first login.</p>
-                <a href="#docs-install">Read guide</a>
-        </article>
-        <article class="card">
-          <h3>Post-install Setup</h3>
-          <p>Packages, desktop tweaks, and gaming setup recommendations.</p>
-          <a href="#docs-setup">Read guide</a>
-        </article>
+      <div class="docs-content">
+        <div class="docs-nav">
+          <button class="docs-nav-btn active" data-section="install">Install Guide</button>
+          <button class="docs-nav-btn" data-section="setup">Post-install Setup</button>
+        </div>
+        <div id="docs-container" class="docs-container">
+          <div class="loading">Loading documentation...</div>
+        </div>
       </div>
     </section>
   </main>

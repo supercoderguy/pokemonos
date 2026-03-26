@@ -364,6 +364,142 @@ code {
   font-size: 0.9rem;
 }
 
+.docs-content {
+  max-width: 100%;
+}
+
+.docs-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.docs-nav-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.docs-nav-btn:hover {
+  background: var(--card);
+  border-color: var(--brand);
+}
+
+.docs-nav-btn.active {
+  background: var(--brand);
+  color: #04101d;
+  border-color: var(--brand);
+}
+
+.docs-container {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--card) 84%, #02030a);
+  padding: 1.5rem;
+  min-height: 400px;
+}
+
+.docs-container .loading {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.docs-container h1,
+.docs-container h2,
+.docs-container h3,
+.docs-container h4 {
+  color: var(--text);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.docs-container h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.docs-container h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.docs-container h3 {
+  font-size: 1.25rem;
+}
+
+.docs-container p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.docs-container ul,
+.docs-container ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.docs-container li {
+  margin-bottom: 0.5rem;
+}
+
+.docs-container code {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.9em;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.docs-container pre {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+.docs-container pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.85em;
+}
+
+.docs-container blockquote {
+  border-left: 4px solid var(--brand);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.docs-container a {
+  color: var(--brand-2);
+  text-decoration: underline;
+}
+
+.docs-container a:hover {
+  text-decoration: none;
+}
+
+.docs-container .error {
+  text-align: center;
+  color: #ff6b6b;
+  font-style: italic;
+  padding: 2rem;
+}
+
 @media (max-width: 860px) {
   .grid.two,
   .grid.three {
